@@ -1,9 +1,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
-#include "../include/colormap.h"
-#include "../include/functions.h"
-#include "../include/shader_s.h"
+#include "./include/colormap.h"
+#include "./include/functions.h"
+#include "./include/shader_s.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
