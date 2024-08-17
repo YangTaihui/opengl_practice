@@ -4,10 +4,10 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
-#include "../include/camera.h"
-#include "../include/colormap.h"
-#include "../include/functions.h"
-#include "../include/shader_m.h"
+#include "./include/camera.h"
+#include "./include/colormap.h"
+#include "./include/functions.h"
+#include "./include/shader_m.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
