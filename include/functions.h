@@ -1,5 +1,15 @@
 #include <algorithm>
 
+float* calloc1d_float(int m) {
+    float* data = (float*)calloc(m, sizeof(float));
+    return data;
+}
+
+unsigned int* calloc1d_uint(int m) {
+    unsigned int* data = (unsigned int*)calloc(m, sizeof(unsigned int));
+    return data;
+}
+
 float** malloc2d(int m, int n) {
     float** data = (float**)malloc(m * sizeof(float*));
     for (int i = 0; i < m; i++) {
