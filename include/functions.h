@@ -1,4 +1,8 @@
 #include <algorithm>
+#define MIN(x,y) ((x) < (y) ? (x) : (y))
+#define MAX(x,y) ((x) > (y) ? (x) : (y))
+#define NINT(x) ((int)((x)>0.0?(x)+0.5:(x)-0.5))
+#define ISODD(n) ((n) & 01)
 
 float* calloc1d_float(int m) {
     float* data = (float*)calloc(m, sizeof(float));
@@ -71,8 +75,8 @@ void min_max_2d(float** data2d, int nx, int ny, float zoom) {
     int i, j;
     for (i = 0; i < nx; i++) {
         for (j = 0; j < ny; j++) {
-            maxv = std::max(maxv, data2d[i][j]);
-            minv = std::min(minv, data2d[i][j]);
+            maxv = MAX(maxv, data2d[i][j]);
+            minv = MIN(minv, data2d[i][j]);
         }
     }
     std::cout << "min " << minv << " max " << maxv << std::endl;
@@ -118,8 +122,8 @@ void min_max_3d(float*** data3d, int nx, int ny, int nz, float zoom) {
     for (i = 0; i < nx; i++) {
         for (j = 0; j < ny; j++) {
             for (k = 0; k < nz; k++) {
-                maxv = std::max(maxv, data3d[i][j][k]);
-                minv = std::min(minv, data3d[i][j][k]);
+                maxv = MAX(maxv, data3d[i][j][k]);
+                minv = MIN(minv, data3d[i][j][k]);
             }
         }
     }
