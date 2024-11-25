@@ -47,5 +47,5 @@
 
 ---
 
-## 2024/11/25 更新
-4_2d_text：需要配置freetype，配置方法类似前文所提，Windows系统可由此[链接](https://github.com/ubawurinna/freetype-windows-binaries/releases)下载已编译好的lib和dll，将合适版本的lib和dll放入sln同一级目录，附加依赖项输入freetype.lib。
+## Freetype
+4_2d_text需要配置freetype，配置方法类似前文所提，Windows系统可由此[链接](https://github.com/ubawurinna/freetype-windows-binaries/releases)下载已编译好的lib和dll，将合适版本的lib和dll放入sln同一级目录，附加依赖项输入freetype.lib。
