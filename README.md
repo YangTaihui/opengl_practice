@@ -16,6 +16,8 @@
 
 5_surface：绘制三维曲面，类似MATLAB的surface。
 
+6_3d_ball：绘制三维球体，按照经纬度将贴图覆盖其上。
+
 ## OpenGL环境配置及运行程序
 
 以1_2d_texture为例：
