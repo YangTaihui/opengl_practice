@@ -49,8 +49,8 @@ int main()
     float* u_arr = calloc1d_float(nu);
     float* v_arr = calloc1d_float(nv);
 
-    int grid_w = 10, grid_h = 8;
-    int one_grid_n = 4*width * height / grid_w / grid_h;
+    //int grid_w = 10, grid_h = 8;
+    //int one_grid_n = 4*width * height / grid_w / grid_h;
     //for (j = 0;j < grid_h;j++) {
     //    for (i = 0; i < grid_w; i++) {
     //        if (i % 2 == j % 2) {
